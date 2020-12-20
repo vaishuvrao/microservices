@@ -9,7 +9,7 @@ This work is on Java Spring Cloud Deploy Microservices. Which can be accomplishe
 
 By end of this project you will use the spring cloud to deploy a pair of microservices that will be used to inject the pair of random numbers into the math quiz
 
-Microservices are simply a set of small applications that can communicate with one another to create an application. The advantages of using micro services is they are quick to develop and test. In addition, they scale well when demand increases for one part of the application, and they are easier to maintain since each microservice is not strongly coupled to the other. The goal of the application within an application group accessible using the same server and port number.
+***Microservices are simply a set of small applications that can communicate with one another to create an application. The advantages of using micro services is they are quick to develop and test. In addition, they scale well when demand increases for one part of the application, and they are easier to maintain since each microservice is not strongly coupled to the other. The goal of the application within an application group accessible using the same server and port number.***
 
 ## Task1: RAND
 :dart: Overview of the application\
@@ -46,23 +46,27 @@ Note That in question-service.properties : server.port=9001 >> spring.applicatio
 and in rand-service.properties : server.port=9002 >> spring.application.name=rand-service
 
 In this task we created a git configuration repository to manage spring cloud configuration properties.
-in this task we create a s pring clod configuration server to manage configurations using repositories for the micro services application
+
 
 ## Task3 : SERVER
 :dart: Use the Visual studio code commands to invoke spring initializer\
 :dart: Add the required dependencies for the spring configuration server\
 :dart identify the server port and URI for the config repository in application properties
 
-For the server configuration in command palete -> create a gradle project -> java -> server -> JAR -> 11 -> config server, Eureka discovery client -> enter and save it in desktop -> generate new folder
+For the server configuration in command palete 
+-create a gradle project -> java -> server -> JAR -> 11 -> config server, Eureka discovery client -> enter and save it in desktop -> generate new folder
 
 In resources >> application.properties set the server.port: 8888
+
+in this task we create a spring cloud configuration server to manage configurations using repositories for the micro services application
 
 ## Task4: REGISTRY
 :dart: Use the visual studio code to create the Registry server\
 :dart: Add the annotation to inject the EUreka server\
 :dart: Set up the bootstrap properties and application properties
 
-For the server configuration in command palete -> create a gradle project -> java -> registry -> JAR -> 11 -> cloud bootstrap, Eureka server -> enter and save it in desktop-> generate new folder
+For the server configuration in command palete 
+- create a gradle project -> java -> registry -> JAR -> 11 -> cloud bootstrap, Eureka server -> enter and save it in desktop-> generate new folder
 
 In resources -> application.properties set the server.port: 8761 and give these commands in gitbash
  
@@ -76,7 +80,8 @@ In resources -> application.properties set the server.port: 8761 and give these 
 :dart: Add bootstrap properties\
 :dart: identify the server port(8080) and ZUUL rout mapping in the application.properties
 
-For the server configuration in command palete -> create a gradle project -> java -> router -> JAR -> 11 -> spring boot actuator, Eureka discovery client, zuul[maintainence], config client -> enter and save it in desktop-> generate new folder
+For the server configuration in command palete 
+- create a gradle project -> java -> router -> JAR -> 11 -> spring boot actuator, Eureka discovery client, zuul[maintainence], config client -> enter and save it in desktop-> generate new folder
 
 In resources -> application.properties set the server.port: 8080 
 
@@ -84,5 +89,9 @@ In resources -> application.properties set the server.port: 8080
 we get our random generator micro servce
 ![](output.PNG)
 
-we the question for the micro services
+we get the question for the micro services
 ![](out2.PNG)
+
+
+
+:clap: :clap: :clap:CONGRAGULATIONS YOU HAVE SUCCESSFULLY DONE IT :clap: :clap: :clap:
